@@ -1,0 +1,157 @@
+* {
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+main {
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Literata Display', Courier, monospace;
+    color: rgb(62, 62, 62);
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.home-page-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2px;
+    padding-bottom: 20px;
+    height: 90vh;
+}
+
+.welcome {
+
+    padding: 20px;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    border: solid rgba(0, 0, 0, 0.5);
+    border-width: 20px;
+
+}
+
+.slider-wrapper {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* her slayt hücreye sığsın */
+.slide {
+    min-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.slider-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider-text {
+    text-align: center;
+    background: rgba(19, 37, 97, 0.2);
+    height: 100%;
+    width: 100%;
+    padding: 15%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.mp-brand-txt {
+
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+    width: 100%;
+
+}
+
+#p-txt-2 {
+    font-family: 'Literata Display', Courier, monospace;
+    color: rgb(41, 27, 27);
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
+    max-width: 400px;
+
+
+}
+
+
+#m-txt-1 {
+    font-family: 'Literata Display', Courier, monospace;
+    font-weight: 600;
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
+    font-weight: 600;
+    color: #1f1919;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+@media(max-width:768px) {
+    main {
+
+        padding: 0;
+        margin: 0;
+    }
+
+    .mp-brand-txt {
+        grid-template-columns: 1fr;
+    }
+
+    .home-page-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        height: auto;
+    }
+
+    .slider {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+        border: solid rgba(0, 0, 0, 0.5);
+        border-width: 20px;
+
+    }
+
+}
