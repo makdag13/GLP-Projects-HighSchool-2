@@ -10,7 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(255, 255, 255);
 }
 
 .header {
@@ -80,14 +79,14 @@ header::before {
 }
 
 .container {
-    display: grid;
     flex: 1;
-    margin-top: 16vh;
+    display: grid;
     grid-template-columns: 18vw 1fr;
+    gap: 20px;
     width: 100%;
-    height: 600px;
-
-
+    margin-top: 17vh;
+    margin-bottom: 2vh;
+    box-sizing: border-box;
 }
 
 .left {
@@ -99,7 +98,7 @@ header::before {
     margin-top: 20px;
     height: 88vh;
     max-height: 700px;
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 10px;
     z-index: 99;
 
@@ -193,6 +192,14 @@ header::before {
     font-size: 3rem;
     display: none;
 
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(181, 186, 190, 0.5);
+    max-height: 100px;
+    width: 100%;
+    padding: 10px 0;
 }
 
 @media(max-width:992px) {

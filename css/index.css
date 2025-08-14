@@ -19,15 +19,15 @@ h1 {
 
 .home-page-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 2px;
     padding-bottom: 20px;
-    height: 90vh;
+    height: 85vh;
 }
 
 .welcome {
 
-    padding: 20px;
+    padding: 10px;
 }
 
 .slider {
@@ -84,11 +84,8 @@ h1 {
     font-family: 'Literata Display', Courier, monospace;
     color: rgb(41, 27, 27);
     font-size: clamp(1rem, 1.5vw, 1.8rem);
-    max-width: 400px;
-
-
+    max-width: 500px;
 }
-
 
 #m-txt-1 {
     font-family: 'Literata Display', Courier, monospace;
